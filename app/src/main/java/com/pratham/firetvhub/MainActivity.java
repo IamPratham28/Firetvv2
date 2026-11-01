@@ -4,7 +4,6 @@ package com.pratham.firetvhub;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.View;
 import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -91,4 +90,4 @@ public class MainActivity extends Activity {
         }
         super.onDestroy();
     }
-  }
+}
