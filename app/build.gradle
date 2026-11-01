@@ -1,21 +1,20 @@
 
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.pratham.firetvhub'
-    compileSdk 35
-
-    defaultConfig {
-        applicationId 'com.pratham.firetvhub'
-        minSdk 22
-        targetSdk 28
-        versionCode 1
-        versionName '1.0'
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
 
-dependencies {
-    implementation 'com.github.Edsuns.AdblockAndroid:ad-filter:1.0'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
 }
+
+rootProject.name = "FireTVLiteHub"
+include(":app")
+s
