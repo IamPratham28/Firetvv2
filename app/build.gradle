@@ -1,20 +1,17 @@
 
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
+plugins {
+    id 'com.android.application'
 }
 
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
+android {
+    namespace 'com.pratham.firetvhub'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.pratham.firetvhub'
+        minSdk 22
+        targetSdk 28
+        versionCode 1
+        versionName '1.0'
     }
 }
-
-rootProject.name = "FireTVLiteHub"
-include(":app")
-s
